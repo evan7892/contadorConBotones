@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 50px; 
+
+}
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+}
+nav li :hover{
+    background-color: rgb(161, 161, 255);
+    color: white;
+    padding: 7px;
+}
+.navBar{
+    background-color: rgb(177, 250, 255);
+}
