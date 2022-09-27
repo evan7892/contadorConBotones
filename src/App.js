@@ -5,13 +5,14 @@ import ItemListContainer from "./components/Products/ItemListContainer";
 
 import FlexWrapper from "./components/FlexWrapper/FlexWrapper";
 import ItemCount from "./components/ItemCount/ItemCount";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
     <div>
       <Header />
-      <ItemListContainer />
-
+      {/* <ItemListContainer /> */}
+      <ItemDetailContainer/>
       <FlexWrapper>
         <ItemCount initial={1} stock={3} />
       </FlexWrapper>
