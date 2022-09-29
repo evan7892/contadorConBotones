@@ -1,9 +1,12 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./card.css";
+import { Link } from "react-router-dom";
 
 function Card(props) {
-  let { price, title, img, detail } = props;
+  let { price, title, img, detail, id } = props;
+
+  const UrlDetalles = `/producto/${id}`;
 
   return (
     <div className="card">
@@ -15,7 +18,9 @@ function Card(props) {
         <p>{detail}</p>
         <h4>$ {price}</h4>
       </div>
+      <Link to={UrlDetalles}>
       <Button color="red">Ver más</Button>
+      </Link>
     </div>
   );
 }
